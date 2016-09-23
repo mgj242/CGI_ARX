@@ -55,7 +55,7 @@ namespace CGI_ARX {
 	 * Serializes provided vector into human readable form.
 	 * @input vector Input vector to be serialized.
 	 * @output result Place for resulting serialized string
-	 * @input length Length of preallocated result string, in bytes.
+	 * @input resultSize Length of preallocated result string, in bytes.
 	 * @returns true iff (if and only if) the serialization of the whole vector fits into provided result string
 	 *
 	 * @example
@@ -64,7 +64,7 @@ namespace CGI_ARX {
 	 *		if (!toString(v, buffer, 100))
 	 *         cerr << "result buffer too small!" << endl;
 	 */
-	bool toString(Vector vector, char *result, size_t length);
+	bool toString(Vector vector, char *result, size_t resultSize);
 
 	/**
 	 * @returns vector deserialized from input string

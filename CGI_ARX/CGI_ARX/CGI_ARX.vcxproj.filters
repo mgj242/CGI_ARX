@@ -13,24 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{0ad5d726-d2e4-4f15-9da8-7deb71ef1f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{6581e270-8376-484d-b247-a3149cd8c478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests">
+      <UniqueIdentifier>{e34d04cf-2982-4966-9a8c-588bbd89a46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests\unit">
+      <UniqueIdentifier>{834c3c4f-4d79-4992-bf42-51fe369a85d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests\acceptance">
+      <UniqueIdentifier>{78351e0e-f4dd-4f3e-86a3-7bedd7c99c3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="scalar.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\vector.hpp">
+      <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="vector.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\scalar.hpp">
+      <Filter>Header Files\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CGI_ARX.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\vector.cpp">
+      <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="vector.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\CGI_ARX.cpp">
+      <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
