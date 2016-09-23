@@ -34,14 +34,24 @@ namespace CGI_ARX {
 	Vector add(Vector left, const Vector right, size_t length);
 
 	/**
+	 * Multiply given vector by scalar.
 	 * @returns Modified left vector.
 	 */
 	Vector multiply(Vector left, const Scalar right, size_t length);
 
 	/**
+	 * Cross product or vector product is a binary operation on two vectors in three-dimensional space and
+	 * is denoted by the symbol "×". Given two linearly independent vectors a and b, the cross product, a × b,
+	 * is a vector that is perpendicular to both a and b and therefore normal to the plane containing them.
+	 *
 	 * @returns Modified left vector.
 	 */
-	Vector multiply(Vector left, const Vector right, size_t length);
+	Vector crossProduct(Vector left, const Vector right, size_t length);
+
+	/**
+	* @returns Modified left vector.
+	*/
+	Scalar dotProduct(const Vector left, const Vector right, size_t length);
 
 	/**
 	 * @returns Euclidian norm of the input vector.
