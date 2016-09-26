@@ -1,31 +1,25 @@
-﻿#include <iostream>
-
-#include "vector.hpp"
+﻿#include "vector.hpp"
+#include <iostream>
 
 
 using namespace CGI_ARX;
 using namespace std;
 
-
 int main() {
 	Vector v1 = createVector(3);
-	v1[0] = 1.;
-	v1[1] = 2.;
-	v1[2] = 3.;
-	Vector v2 = createVector(3);
-	Vector v3 = createVector(3);
-
-	Vector vysledok = crossProduct(add(v1, v2, 3), v3, 3); // ~ (v1 + v2) x v3
-
+	v1[0] = 1.2;
+	v1[1] = 2.1;
+	v1[2] = 3.1;
 	char buffer[100];
-	if (!toString(v1, 3, buffer, 20))
-		cout << "whoa, malo miesta!" << endl;
-	cout << "toString(v1, ..., 20) == '" << buffer << "'" << endl; // "1.0 2.0 3.0 "
+	if (!toString(v1, 3, buffer, 100))
+		cerr << "malo miesta" << endl;
+	cout << "toString(v1) == '" << buffer << "'" << endl;
 
-	if (!toString(v1, 3, buffer, 8))
-		cout << "ano, malo miesta" << endl;
-	cout << "toString(v1, ..., 8) == '" << buffer << "'" << endl; // "1.0 2.0 "
+	char buffer2[8];
+	if (!toString(v1, 3, buffer2, 5))
+		cerr << "malo miesta" << endl;
+	cout << "toString(v1) == '" << buffer2 << "'" << endl;
 
-    return 0;
-	cout << "C++ programming";
+	cout << "IvoPivo check" << endl;
+	return 0;
 }
