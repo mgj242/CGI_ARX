@@ -36,7 +36,7 @@ CGI_ARX::Scalar CGI_ARX::norm(const Vector, size_t length) {
 // serialization and deserialization
 
 bool CGI_ARX::toString(Vector vector, size_t vectorLength, char *result, size_t resultLength) {
-	assert(length > 0);
+	assert(resultLength > 0);
 
 	return false;
 }
