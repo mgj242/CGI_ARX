@@ -39,6 +39,7 @@ namespace CGI_ARX {
 	 */
 	Vector multiply(Vector left, const Scalar right, size_t length);
 
+	
 	/**
 	 * Cross product or vector product is a binary operation on two vectors in three-dimensional space and
 	 * is denoted by the symbol "×". Given two linearly independent vectors a and b, the cross product, a × b,
@@ -72,7 +73,7 @@ namespace CGI_ARX {
 	 * @example
 	 *		Vector v = createVector(3);
 	 *		char buffer[100];
-	 *		if (!toString(v, buffer, 100))
+	 *		if (!toString(v, 3, buffer, 100))
 	 *         cerr << "result buffer too small!" << endl;
 	 */
 	bool toString(Vector vector, size_t vectorLength, char *result, size_t resultSize);

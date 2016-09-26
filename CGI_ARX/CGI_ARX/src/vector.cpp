@@ -24,6 +24,10 @@ CGI_ARX::Vector CGI_ARX::multiply(Vector left, const Scalar right, size_t length
 	return NULL;
 }
 
+CGI_ARX::Vector CGI_ARX::crossProduct(Vector left, const Vector right, size_t length) {
+	return NULL;
+}
+
 CGI_ARX::Scalar CGI_ARX::norm(const Vector, size_t length) {
 	return NULL;
 }
