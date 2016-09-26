@@ -49,8 +49,8 @@ namespace CGI_ARX {
 	Vector crossProduct(Vector left, const Vector right, size_t length);
 
 	/**
-	* @returns Modified left vector.
-	*/
+	 * @returns Modified left vector.
+	 */
 	Scalar dotProduct(const Vector left, const Vector right, size_t length);
 
 	/**
@@ -64,6 +64,7 @@ namespace CGI_ARX {
 	/**
 	 * Serializes provided vector into human readable form.
 	 * @input vector Input vector to be serialized.
+	 * @input vectorLength number of elements in the vector.
 	 * @output result Place for resulting serialized string
 	 * @input resultSize Length of preallocated result string, in bytes.
 	 * @returns true iff (if and only if) the serialization of the whole vector fits into provided result string
@@ -74,7 +75,7 @@ namespace CGI_ARX {
 	 *		if (!toString(v, buffer, 100))
 	 *         cerr << "result buffer too small!" << endl;
 	 */
-	bool toString(Vector vector, char *result, size_t resultSize);
+	bool toString(Vector vector, size_t vectorLength, char *result, size_t resultSize);
 
 	/**
 	 * @returns vector deserialized from input string

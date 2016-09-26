@@ -12,7 +12,7 @@ int main() {
 	Vector v2 = createVector(3);
 	Vector v3 = createVector(3);
 
-	Vector vysledok = multiply(add(v1, v2, 3), v3, 3); // ~ (v1 + v2) x v3
+	Vector vysledok = crossProduct(add(v1, v2, 3), v3, 3); // ~ (v1 + v2) x v3
 
     return 0;
 }
