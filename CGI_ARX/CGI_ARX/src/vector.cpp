@@ -10,6 +10,7 @@
 #define snprintf _snprintf
 #endif
 
+
 CGI_ARX::Vector CGI_ARX::createVector(size_t length) {
 	if (length <= 0)
 		return NULL;
@@ -49,19 +50,17 @@ CGI_ARX::Scalar CGI_ARX::norm(const Vector, size_t length) {
 // serialization and deserialization
 
 bool CGI_ARX::toString(Vector vector, size_t vectorLength, char *result, size_t resultLength) {
-
 	size_t resultIx = 0; //aktualne miesto posledneho znaku
-	for (size_t ix = 0; ix < vectorLength; ix++)
-	{
+	for (size_t ix = 0; ix < vectorLength; ix++) {
 		const Scalar scalar = vector[ix];
 		size_t volneMiesto = resultLength - resultIx;
-		size_t zapisanychBajtov = snprintf(&result[resultIx], volneMiesto, "%g ", scalar);  //
-		if (volneMiesto == zapisanychBajtov)
-			return ix == vectorLength - 1; //podmienka je splnena len ak som v poslednej iteracii
+		const char *format = ix > 0 ? ", %g" : "%g";
+		size_t zapisanychBajtov = snprintf(&result[resultIx], volneMiesto, format, scalar);
 		resultIx += zapisanychBajtov;
+		if (resultIx >= resultLength)
+			return ix == vectorLength - 1; //podmienka je splnena len ak som v poslednej iteracii
 	}
 	return true;
-
 }
 
 CGI_ARX::Vector CGI_ARX::fromString(const char *) {
