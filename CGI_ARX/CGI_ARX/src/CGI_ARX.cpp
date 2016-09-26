@@ -27,4 +27,5 @@ int main() {
 	cout << "toString(v1, ..., 8) == '" << buffer << "'" << endl; // "1.0 2.0 "
 
     return 0;
+	cout << "C++ programming";
 }
