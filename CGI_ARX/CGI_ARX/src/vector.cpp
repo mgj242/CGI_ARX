@@ -5,6 +5,11 @@
 #include "vector.hpp"
 
 
+#if _MSC_VER == 1600
+#define snprintf _snprintf
+#endif
+
+
 // construction and destruction
 
 CGI_ARX::Vector CGI_ARX::createVector(size_t length) {
