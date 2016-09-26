@@ -3,9 +3,11 @@
 #include "vector.hpp"
 
 
+
 // construction and destruction
 
 CGI_ARX::Vector CGI_ARX::createVector(size_t length) {
+
 	assert(!"implemented");
 	return NULL;
 }
@@ -25,7 +27,7 @@ CGI_ARX::Vector CGI_ARX::multiply(Vector left, const Scalar right, size_t length
 	return NULL;
 }
 
-CGI_ARX::Vector CGI_ARX::multiply(Vector left, const Vector right, size_t length) {
+CGI_ARX::Vector CGI_ARX::crossProduct(Vector left, const Vector right, size_t length) {
 	return NULL;
 }
 

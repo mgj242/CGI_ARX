@@ -39,6 +39,7 @@ namespace CGI_ARX {
 	 */
 	Vector multiply(Vector left, const Scalar right, size_t length);
 
+	
 	/**
 	 * Cross product or vector product is a binary operation on two vectors in three-dimensional space and
 	 * is denoted by the symbol "×". Given two linearly independent vectors a and b, the cross product, a × b,
